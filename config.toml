@@ -2,7 +2,6 @@ baseurl = "http://detiber.github.io/"
 defaultContentLanguage = "en-us"
 languageCode = "en-us"
 title = "Jason DeTiberus"
-publishDir = "../detiber.github.io"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "uBlogger"
