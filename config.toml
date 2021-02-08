@@ -1,0 +1,101 @@
+baseurl = "http://detiber.github.io/"
+defaultContentLanguage = "en-us"
+languageCode = "en-us"
+title = "Jason DeTiberus"
+publishDir = "../detiber.github.io"
+
+# Change the default theme to be use when building the site with Hugo
+theme = "uBlogger"
+
+enableemoji = true
+
+[outputs]
+  home = ["HTML"]
+
+[params]
+  # uBlogger theme version
+  version = "1.3.X"
+  # site description
+  #description = "This is My New Hugo Site"
+  # site keywords
+  #keywords = ["Theme", "Hugo"]
+  # site default theme ("light", "dark", "auto")
+  defaultTheme = "auto"
+
+  [params.footer]
+    enable = true
+    copyright = true
+    since = 2021
+    license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>'
+
+  [params.home]
+    # Home page profile
+    [params.home.profile]
+      enable = true
+      # Gravatar Email for preferred avatar in home page
+      gravatarEmail = "detiber@gmail.com"
+      # URL of avatar shown in home page
+      avatarURL = "https://secure.gravatar.com/avatar/811cd04d3526babe780ddb2a474116d7?s=200"
+
+      # title shown in home page (HTML format is supported)
+      title = "How did I get here?"
+      # subtitle shown in home page
+      subtitle = "Internet Ramblings of an Infrastructure Engineer"
+      # whether to show social links
+      social = true
+
+      # disclaimer (HTML format is supported)
+      disclaimer = ""
+      
+      # Home page posts
+      [params.home.posts]
+        enable = true
+        # special amount of posts in each home posts page
+        paginate = 6
+
+  # Social config about the author
+  [params.social]
+    GitHub = "detiber"
+    Twitter = "detiber"
+    Linkedin = "detiber"
+    Email = "detiber@gmail.com"
+
+  # Page config
+  [params.page]
+    theme = "classic"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    # title will be shown when you hover on this menu link
+    title = ""
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "Tags"
+    url = "/tags/"
+    title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = ""
+    weight = 3
+
+# Markup related configuration in Hugo
+[markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    # false is a necessary configuration
+    noClasses = false
