@@ -63,6 +63,14 @@ enableemoji = true
   [params.page]
     theme = "classic"
 
+  # Comment config
+  [params.comment]
+    enable = true
+
+    [params.comment.disqus]
+      enable = true
+      shortname = "detiber"
+
 [menu]
   [[menu.main]]
     identifier = "posts"
