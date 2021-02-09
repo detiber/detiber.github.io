@@ -2,6 +2,14 @@
 title: "UEFI on a Macchiatobin"
 date: 2021-02-08T12:38:46-05:00
 draft: false
+categories:
+- Tinkerbell
+- Hardware
+tags:
+- ARM
+- Macchiatobin
+- UEFI
+- edk2
 ---
 
 I recently broke out as Macchiatobin that I had laying around from a few years ago for testing arm64 support with [Tinkerbell](https://tinkerbell.org). Revisiting the [wiki](http://wiki.macchiatobin.net/tiki-index.php?page=Wiki+Home) it was obvious that the instructions for building the UEFI support was pretty outdated and I wanted to try and use primarily upstream sources rather than the forked and unmaintained versions used in the wiki.
